@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Country Capitals</title>
+  <style>
+    .country-box {
+      border: 2px solid #ccc;
+      padding: 10px;
+      border-radius: 5px;
+      width: 250px;
+      margin: 0 auto;
+      
+    }
+
+    p {
+      color: red;
+      font-weight: bold;
+      font-size: 20px;
+      margin-top: 10px;
+      border-style: dashed;
+    }
+  </style>
+</head>
+<body>
+  <div class="country-box">
+    <form name="frm1">
+      <br/>
+      <center>
+        Select a Country:
+        <select name="country" onchange="capital()">
+          <option value="select">--SELECT--</option>
+          <option value="india">India</option>
+          <option value="china">China</option>
+          <option value="pakistan">Pakistan</option>
+          <option value="bangladesh">Bangladesh</option>
+          <option value="japan">Japan</option>
+        </select>
+        <br/><br/>
+        <font color="green" size="5">Capital is:</font>
+        <p id="capt">Please select any country</p>
+      </center>
+    </form>
+  </div>
+
+  <script>
+    function capital() {
+      var countrySelect = document.forms["frm1"].country;
+      var selectedCountry = countrySelect.value;
+      var capital = "Please select any country";
+
+      if (selectedCountry === "india") {
+        capital = "NEW DELHI";
+      } else if (selectedCountry === "china") {
+        capital = "BEIJING";
+      } else if (selectedCountry === "pakistan") {
+        capital = "ISLAMABAD";
+      } else if (selectedCountry === "bangladesh") {
+        capital = "DHAKA";
+      } else if (selectedCountry === "japan") {
+        capital = "TOKYO";
+      }
+
+      document.getElementById("capt").innerHTML = capital;
+    }
+  </script>
+</body>
+</html>

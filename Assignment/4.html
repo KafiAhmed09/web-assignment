@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Personal Details</title>
+    <style>
+      body {
+        font-family: Times New Roman;
+        font-size: 24px;
+      }
+      table {
+        border-collapse: collapse;
+        width: 100%;
+      }
+      td {
+        padding: 10px;
+      }
+      th {
+        text-align: right;
+        width: 30%;
+        background-color: lightblue;
+        padding: 10px;
+      }
+      .logo {
+        background-image: url("logo1.png");
+        background-repeat: no-repeat;
+        background-size: contain;
+        background-position: top right;
+        height: 200px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="logo"></div>
+    <h1>Personal Details</h1>
+    <table>
+      <tr>
+        <th>Name:</th>
+        <td><input type="text" name="name"></td>
+      </tr>
+      <tr>
+        <th>Class:</th>
+        <td><input type="text" name="class"></td>
+      </tr>
+      <tr>
+        <th>Qualifications:</th>
+        <td><textarea name="qualifications"></textarea></td>
+      </tr>
+      <tr>
+        <th>Photo:</th>
+        <td><input type="file" name="photo"></td>
+      </tr>
+      <tr>
+        <th>Address:</th>
+        <td><textarea name="address"></textarea></td>
+      </tr>
+    </table>
+  </body>
+</html>

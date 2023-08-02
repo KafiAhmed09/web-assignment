@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Class Routine</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+    }
+
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      table-layout: fixed;
+      background-color: #f9f9f9;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    }
+
+    th, td {
+      padding: 12px;
+      text-align: center;
+    }
+
+    th {
+      background-color: #507186;
+      color: #fff;
+    }
+
+    tr:nth-child(even) {
+      background-color: grey;
+    }
+
+    tr:nth-child(even) {
+      background-color: red;
+    }
+
+    tr:hover {
+      background-color: #f5f5f5;
+    }
+
+    td {
+      border-bottom: 8px solid #9ac84f;
+    }
+
+    .class-time {
+      font-size: 16px;
+      font-weight: bold;
+      color: #020202;
+      border-color: antiquewhite;
+    }
+
+    .class-subject {
+      font-size: 22px;
+      font-weight: bold;
+      /* border-color: #f2f3e9; */
+    }
+
+    .class-teacher {
+      font-size: 22px;
+      color: #060404;
+      text-align: center;
+      border-color: rgb(143, 203, 228);
+    }
+  </style>
+</head>
+<body>
+  <h1 style="text-align: center;"><u> Class Routine </u></h1>
+  <table>
+    <tr>
+      <th>Day</th>
+      <th>Time</th>
+      <th>Course</th>
+      <th>Teacher</th>
+    </tr>
+    <!-- Sunday -->
+    <tr style="background-color: red;">
+      <td rowspan="4" style="background-color: rgb(65, 192, 160)">Sunday</td>
+      <td style="border-style: dashed;" class="class-time" >09:00 AM - 10:30 AM</td>
+      <td class="class-subject">Web design <br>(Lecture)</td>
+      <td style="border-style: double;" class="class-teacher"><strong>AR</strong> </td>
+    </tr>
+    <tr style="background-color: grey">
+      <td style="border-style: dashed;"  class="class-time">10:45 AM - 12:15 PM</td>
+      <td class="class-subject">Project Management</td>
+      <td style="border-style: double;" class="class-teacher"><strong>FI</strong> </td>
+    </tr>
+    <tr style="background-color: red;">
+      <td style="border-style: dashed;"  class="class-time">01:00 PM - 02:30 PM</td>
+      <td class="class-subject">Research lab</td>
+      <!-- <td colspan="2">Web design lab</td> -->
+      <td style="border-style: double;" class="class-teacher"><strong>NS</strong> </td>
+    </tr>
+    <tr style="background-color: grey">
+      <td style="border-style: dashed;"  class="class-time" >02:45 PM - 04:15 PM</td>
+      <td class="class-subject">Web design <br>(Tutorial)</td>
+      <td style="border-style: double;" class="class-teacher"><strong>MA</strong> </td>
+    </tr>
+    
+    <!-- monday -->
+      <tr style="background-color: red;">
+        <td rowspan="4" style="background-color: rgb(65, 192, 160)">Monday</td>
+        <td style="border-style: dashed;"  class="class-time" >09:00 AM - 10:30 AM</td>
+        <td class="class-subject">Research <br>(Lecture)</td>
+        <td style="border-style: double;" class="class-teacher"><strong>NS</strong></td>
+      </tr>
+      <tr style="background-color: grey">
+        <td style="border-style: dashed;"  class="class-time">10:45 AM - 12:15 PM</td>
+        <td class="class-subject">Cloud <br>(Tutorial)</td>
+        <td style="border-style: double;" class="class-teacher"><strong>RH</strong></td>
+      </tr>
+      <tr style="background-color: red;">
+        <td style="border-style: dashed;"  class="class-time">01:00 PM - 02:30 PM</td>
+        <td class="class-subject">Project Management <br>(Lecture)</td>
+        <td style="border-style: double;" class="class-teacher"><strong>SMH</strong></td>
+      </tr>
+      <tr style="background-color: grey">
+        <td style="border-style: dashed;"  class="class-time">02:45 PM - 04:15 PM</td>
+        <td class="class-subject">Web Design <br>(Lab)</td>
+        <td style="border-style: double;" class="class-teacher"><strong>MA</strong></td>
+      </tr>
+
+      <!-- Tuesday -->
+      <tr style="background-color: red;">
+        <td rowspan="4" style="background-color: rgb(65, 192, 160)">Tuesday</td>
+        <td style="border-style: dashed;"  class="class-time" >09:00 AM - 10:30 AM</td>
+        <td class="class-subject">Cloud <br>(Lab)</td>
+        <td style="border-style: double;" class="class-teacher"><strong>RH</strong></td>
+      </tr>
+      <tr style="background-color: grey">
+        <td style="border-style: dashed;"  class="class-time">10:45 AM - 12:15 PM</td>
+        <td class="class-subject">STEM <br>(Lecture)</td>
+        <td style="border-style: double;" class="class-teacher"><strong>KIS</strong></td>
+      </tr>
+      <tr style="background-color: red;">
+        <td style="border-style: dashed;"  class="class-time">01:00 PM - 02:30 PM</td>
+        <td class="class-subject">Project Management <br>(Lecture)</td>
+        <td style="border-style: double;" class="class-teacher"><strong>SMH</strong></td>
+      </tr>
+      <tr style="background-color: grey">
+        <td style="border-style: dashed;"  class="class-time">02:45 PM - 04:15 PM</td>
+        <td class="class-subject">Capstone <br>(Project)</td>
+        <td style="border-style: double;" class="class-teacher"><strong>AHK</strong></td>
+      </tr>
+      <!-- Wednesday -->
+      <tr style="background-color: red;">
+        <td rowspan="4" style="background-color: rgb(65, 192, 160)">Wednesday</td>
+        <td style="border-style: dashed;"  class="class-time" >09:00 AM - 10:30 AM</td>
+        <td class="class-subject">Cloud <br>(Lab)</td>
+        <td style="border-style: double;" class="class-teacher"><strong>RH</strong></td>
+      </tr>
+      <tr style="background-color: grey">
+        <td style="border-style: dashed;"  class="class-time">10:45 AM - 12:15 PM</td>
+        <td class="class-subject">Research <br>(Lab)</td>
+        <td style="border-style: double;" class="class-teacher"><strong>NS</strong></td>
+      </tr>
+      <tr style="background-color: red;">
+        <td style="border-style: dashed;"  class="class-time">01:00 PM - 02:30 PM</td>
+        <td class="class-subject">Research <br>(Tutorial)</td>
+        <td style="border-style: double;" class="class-teacher"><strong>NS</strong></td>
+      </tr>
+      <tr style="background-color: grey">
+        <td style="border-style: dashed;"  class="class-time">02:45 PM - 04:15 PM</td>
+        <td class="class-subject">STEM <br>(Tutorial)</td>
+        <td style="border-style: double;" class="class-teacher"><strong>AZ</strong></td>
+      </tr>
+      <!-- Thursday -->
+      <tr style="background-color: red;">
+        <td rowspan="4" style="background-color: rgb(65, 192, 160)">Thursday</td>
+        <td style="border-style: dashed;"  class="class-time" >09:00 AM - 10:30 AM</td>
+        <td class="class-subject">Cloud <br>(Lecture) <br> Online</td>
+        <td style="border-style: double;" class="class-teacher"><strong>MMR</strong></td>
+      </tr>
+      <tr style="background-color: grey">
+        <td style="border-style: dashed;"  class="class-time">10:45 AM - 12:15 PM</td>
+        <td class="class-subject">Web Design <br>(Lecture) <br>Online</td>
+        <td style="border-style: double;" class="class-teacher"><strong>AR</strong></td>
+      </tr>
+      <tr style="background-color: red;">
+        <td style="border-style: dashed;"  class="class-time">01:00 PM - 02:30 PM</td>
+        <td class="class-subject">Web Design <br>(Lecture) <br>Online</td>
+        <td style="border-style: double;" class="class-teacher"><strong>MSA</strong></td>
+      </tr>
+      <tr style="background-color: grey">
+        <td style="border-style: dashed;"  class="class-time">02:45 PM - 04:15 PM</td>
+        <td class="class-subject">Capstone <br>(lab)</td>
+        <td style="border-style: double;" class="class-teacher"><strong>AHK</strong></td>
+      </tr>
+
+
+  </table>
+</body>
+</html>
